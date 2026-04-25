@@ -1,0 +1,106 @@
+/* - Alto del Nav: 5rem.
+- El Nav tiene un espaciado interno de 1rem en la izquierda y en la derecha, pero
+tiene 0 arriba y abajo.
+- Fuente utilizada: Raleway.
+- Tamaño de la fuente utilizada: 20px.
+- Espaciado interno de cada uno de los ítems del menú: 1rem.
+- Espaciado externo de cada uno de los items del menú: 1rem.
+- Color de fondo del item:hover: #7c7b7b.
+- El tamaño del logo es: 100px de ancho x 100% de alto.
+- El logotipo se encuentra adjunto.*/
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu__nav {
+    display: flex;
+    background-color: #a6a6a6;
+    height: 5rem;
+    padding:0 1rem; 
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+.menu__nav__logo {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    background-image: url("img/logo.png");
+    background-repeat: no-repeat;
+}
+
+.menu__nav__Items {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center; 
+    margin-left: auto;
+}
+
+.items a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.items:hover {
+    background-color: #7c7b7b;
+}
+h1 {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+.main__section {
+    /* Imagen de fondo ocupando toda la pantalla */
+    background-image: url("img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+    /* Centrado total de los títulos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+/* Estilos comunes para ambos títulos */
+.main__section__title, 
+.main__section__subtitle {
+    padding: 1rem; 
+    background-color: #b14421;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+/* Título principal (h1) */
+.main__section__title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Título secundario h2  */
+.main__section__subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
