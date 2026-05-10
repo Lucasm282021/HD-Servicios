@@ -94,14 +94,73 @@ h1 {
     font-family: 'Montserrat';
 }
 
-/* Título principal (h1) */
 .main__section__title {
     font-size: 3rem;
     font-weight: 700;
 }
 
-/* Título secundario h2  */
 .main__section__subtitle {
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+.main__section__servicios {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.main__section__servicios_title {
+    font-family: 'montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight:bold;
+    margin: 1rem;
+    text-align: center;
+    color: #b14421;   
+}
+
+.contenedor-cards {
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap; 
+}  
+
+.section__card__servicios {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #ffffff;
+    padding-bottom: 1rem;
+    align-items: center;
+    width: 300px;
+}
+
+.section__card__servicios:hover {
+    background-color: #F0F0F0;
+}
+.section__card__servicios__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.card__description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+}           
