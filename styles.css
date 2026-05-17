@@ -8,7 +8,12 @@ tiene 0 arriba y abajo.
 - Color de fondo del item:hover: #7c7b7b.
 - El tamaño del logo es: 100px de ancho x 100% de alto.
 - El logotipo se encuentra adjunto.*/
-
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* se pone la altura del nav */
+    /* Esto lo hablamos en clase, pero no lo esplicaste vos, no se si tu idea hera
+    esta o aplicar otra forma que no conosco. */
+}
 /* Estilos generales */
 body {
     margin: 0;
@@ -17,6 +22,8 @@ body {
 
 .menu__nav {
     display: flex;
+    position: fixed;
+    width: 100%; 
     background-color: #a6a6a6;
     height: 5rem;
     padding:0 1rem; 
@@ -65,6 +72,14 @@ h1 {
     margin: 0;
 }
 
+.main__whatsapp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 50px;
+    height: 50px;
+    z-index: 1000; 
+}
 .main__section {
     /* Imagen de fondo ocupando toda la pantalla */
     background-image: url("img/hero.jpg");
@@ -112,7 +127,8 @@ h1 {
     gap: 1rem;
 }
 
-.main__section__servicios_title {
+.main__section__servicios_title,
+.main__section__nosotros_title {
     font-family: 'montserrat', sans-serif;
     font-size: 2rem;
     font-weight:bold;
@@ -149,6 +165,13 @@ h1 {
     object-position: center;
 }
 
+.section__nosotros__img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .card__title {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -164,3 +187,48 @@ h1 {
     padding: 1rem 0;
     margin: 0;
 }           
+
+.main__section__columnas {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1.5rem;
+}
+
+.columnas__title {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.main__section__columnas__info {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.boton_ver_mas {
+    background-color: transparent;
+    width: 200px;
+    padding: 1rem;
+    border: solid 2px black;
+}
+
+.boton_ver_mas:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #ccc;
+    color: #b14421;
+    border-color: #b14421;
+}
