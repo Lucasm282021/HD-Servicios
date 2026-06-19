@@ -43,6 +43,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Boton hamburgesa */
 .hamburger {
     display: none;
     background: none;
@@ -247,6 +248,7 @@ h1 {
     border-color: #b14421;
 }
 
+/*  ---- First Movile ------*/
 @media (max-width: 768px) {
 
     .hamburger {
@@ -254,16 +256,12 @@ h1 {
         margin-left: auto;
     }
 
-    .menu__nav {
-        position: fixed;
-    }
-
     .menu__nav__Items {
         display: none;
         position: absolute;
         top: 5rem;
-        left: 0;
-        width: 100%;
+        right: 0;
+        /* cambia direcion de menu de izquierda a derecha */
         background-color: #a6a6a6;
         flex-direction: column;
         margin: 0;
@@ -272,6 +270,8 @@ h1 {
 
     .menu__nav__Items.is-active {
         display: flex;
+        width: 30%;
+        margin-left: auto;
     }
 
     .items {
