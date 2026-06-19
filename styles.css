@@ -10,10 +10,12 @@ tiene 0 arriba y abajo.
 - El logotipo se encuentra adjunto.*/
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* se pone la altura del nav */
+    scroll-padding-top: 80px;
+    /* se pone la altura del nav */
     /* Esto lo hablamos en clase, pero no lo esplicaste vos, no se si tu idea hera
     esta o aplicar otra forma que no conosco. */
 }
+
 /* Estilos generales */
 body {
     margin: 0;
@@ -23,12 +25,12 @@ body {
 .menu__nav {
     display: flex;
     position: fixed;
-    width: 100%; 
+    width: 100%;
     background-color: #a6a6a6;
     height: 5rem;
-    padding:0 1rem; 
+    padding: 0 1rem;
     align-items: center;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .menu__nav__logo {
@@ -41,15 +43,24 @@ body {
     background-repeat: no-repeat;
 }
 
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
 .menu__nav__Items {
     display: flex;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    
+
     list-style: none;
     margin: 0;
     padding: 0;
-    align-items: center; 
+    align-items: center;
     margin-left: auto;
 }
 
@@ -65,6 +76,7 @@ body {
 .items:hover {
     background-color: #7c7b7b;
 }
+
 h1 {
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
@@ -78,8 +90,9 @@ h1 {
     right: 1rem;
     width: 50px;
     height: 50px;
-    z-index: 1000; 
+    z-index: 1000;
 }
+
 .main__section {
     /* Imagen de fondo ocupando toda la pantalla */
     background-image: url("img/hero.jpg");
@@ -99,9 +112,9 @@ h1 {
 }
 
 /* Estilos comunes para ambos títulos */
-.main__section__title, 
+.main__section__title,
 .main__section__subtitle {
-    padding: 1rem; 
+    padding: 1rem;
     background-color: #b14421;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -131,19 +144,19 @@ h1 {
 .main__section__nosotros_title {
     font-family: 'montserrat', sans-serif;
     font-size: 2rem;
-    font-weight:bold;
+    font-weight: bold;
     margin: 1rem;
     text-align: center;
-    color: #b14421;   
+    color: #b14421;
 }
 
 .contenedor-cards {
-    display:flex;
+    display: flex;
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
-    flex-wrap: wrap; 
-}  
+    flex-wrap: wrap;
+}
 
 .section__card__servicios {
     display: flex;
@@ -158,6 +171,7 @@ h1 {
 .section__card__servicios:hover {
     background-color: #F0F0F0;
 }
+
 .section__card__servicios__img {
     width: 100%;
     height: 200px;
@@ -186,7 +200,7 @@ h1 {
     text-align: center;
     padding: 1rem 0;
     margin: 0;
-}           
+}
 
 .main__section__columnas {
     display: flex;
@@ -231,4 +245,43 @@ h1 {
     box-shadow: 2px 2px 4px #ccc;
     color: #b14421;
     border-color: #b14421;
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    .menu__nav {
+        position: fixed;
+    }
+
+    .menu__nav__Items {
+        display: none;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        background-color: #a6a6a6;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu__nav__Items.is-active {
+        display: flex;
+    }
+
+    .items {
+        width: 100%;
+    }
+
+    .items a {
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }

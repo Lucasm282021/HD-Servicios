@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,21 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <header class="header">
         <nav class="menu__nav">
             <div class="menu__nav__logo"></div>
-            <ul class="menu__nav__Items">
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
+            <ul class="menu__nav__Items" id="navItems">
                 <li class="items"><a href="#">Inicio</a></li>
                 <li class="items"><a href="#servicios">Servicios</a></li>
                 <li class="items"><a href="#nosotros">Nosotros</a></li>
@@ -25,7 +32,8 @@
         </nav>
     </header>
     <main class="main">
-        <a href="https://wa.me/1234567890" target="_blank"> <!-- el direccionamiento lo deje por defecto con el auto completado -->
+        <a href="https://wa.me/1234567890" target="_blank">
+            <!-- el direccionamiento lo deje por defecto con el auto completado -->
             <img class="main__whatsapp" src="/img/Logo_WhatApp.png" alt="Link de WhatsApp">
         </a>
         <section class="main__section">
@@ -36,27 +44,39 @@
             <h2 class="main__section__servicios_title" id="servicios">Nuestros Servicios</h2>
             <div class="contenedor-cards">
                 <article class="section__card__servicios">
-                    <img class="section__card__servicios__img" src="img/rep-de-Celulares.webp" alt="Reparación de Celulares">
+                    <img class="section__card__servicios__img" src="img/rep-de-Celulares.webp"
+                        alt="Reparación de Celulares">
                     <h3 class="card__title">Reparación de Celulares</h3>
-                    <p class="card__description">Ofrecemos servicios de reparación para una amplia gama de marcas y modelos de celulares. Ya sea que tengas un problema con la pantalla, la batería o cualquier otro componente, nuestro equipo de expertos está aquí para ayudarte.</p>
+                    <p class="card__description">Ofrecemos servicios de reparación para una amplia gama de marcas y
+                        modelos de celulares. Ya sea que tengas un problema con la pantalla, la batería o cualquier otro
+                        componente, nuestro equipo de expertos está aquí para ayudarte.</p>
                 </article>
-            
+
                 <article class="section__card__servicios">
-                    <img class="section__card__servicios__img" src="img/rep-de-Computadoras.webp" alt="Reparación de Computadoras">
+                    <img class="section__card__servicios__img" src="img/rep-de-Computadoras.webp"
+                        alt="Reparación de Computadoras">
                     <h3 class="card__title">Reparación de Computadoras</h3>
-                    <p class="card__description">Ofrecemos servicios de reparación para una amplia gama de marcas y modelos de computadoras. Ya sea que tengas un problema con el sistema operativo, el hardware o cualquier otro componente, nuestro equipo de expertos está aquí para ayudarte.</p>
+                    <p class="card__description">Ofrecemos servicios de reparación para una amplia gama de marcas y
+                        modelos de computadoras. Ya sea que tengas un problema con el sistema operativo, el hardware o
+                        cualquier otro componente, nuestro equipo de expertos está aquí para ayudarte.</p>
                 </article>
-            
+
                 <article class="section__card__servicios">
-                    <img class="section__card__servicios__img" src="img/rep-de-televisores.webp" alt="Reparación de Televisores">
+                    <img class="section__card__servicios__img" src="img/rep-de-televisores.webp"
+                        alt="Reparación de Televisores">
                     <h3 class="card__title">Reparación de Televisores</h3>
-                    <p class="card__description">Ofrecemos servicios de reparación para una amplia gama de marcas y modelos de televisores. Ya sea que tengas un problema con la pantalla, el sonido o cualquier otro componente, nuestro equipo de expertos está aquí para ayudarte.</p>
+                    <p class="card__description">Ofrecemos servicios de reparación para una amplia gama de marcas y
+                        modelos de televisores. Ya sea que tengas un problema con la pantalla, el sonido o cualquier
+                        otro componente, nuestro equipo de expertos está aquí para ayudarte.</p>
                 </article>
-            
+
                 <article class="section__card__servicios">
-                    <img class="section__card__servicios__img" src="img/venta-accesorios-&-repuestos.webp" alt="Venta de accesorios">
+                    <img class="section__card__servicios__img" src="img/venta-accesorios-&-repuestos.webp"
+                        alt="Venta de accesorios">
                     <h3 class="card__title">Venta de accesorios y repuestos</h3>
-                    <p class="card__description">Ofrecemos una amplia selección de accesorios y repuestos originales para celulares, computadoras y televisores. Garantizamos la calidad y compatibilidad de todos nuestros productos.</p>
+                    <p class="card__description">Ofrecemos una amplia selección de accesorios y repuestos originales
+                        para celulares, computadoras y televisores. Garantizamos la calidad y compatibilidad de todos
+                        nuestros productos.</p>
                 </article>
             </div>
         </section>
@@ -69,23 +89,25 @@
                         <p class="columnas__description"> En HD Servicios nacimos de una gran pasión:
                             la tecnología y el deseo de ayudar a las personas a mantener sus dispositivos
                             siempre listos. Lo que comenzó como un pequeño proyecto de reparación, creció
-                            gracias a la confianza de nuestros clientes. Hoy, evolucionamos para ofrecer 
-                            también la venta de accesorios de alta calidad, manteniendo siempre nuestro 
+                            gracias a la confianza de nuestros clientes. Hoy, evolucionamos para ofrecer
+                            también la venta de accesorios de alta calidad, manteniendo siempre nuestro
                             compromiso original: brindar un servicio técnico confiable, transparente y con
                             la máxima satisfacción en cada entrega.
                         </p>
                         <button class="boton_ver_mas">Ver más</button>
                     </article>
-                    <img class="section__nosotros__img" src="img/section_nosotros_1.jpeg" alt="personas trabajando en la reparación de un dispositivo">
+                    <img class="section__nosotros__img" src="img/section_nosotros_1.jpeg"
+                        alt="personas trabajando en la reparación de un dispositivo">
                 </div>
 
                 <div class="columna">
-                    <img class="section__nosotros__img" src="img/section_nosotros_2.jpeg" alt="vista de el local de HD Servicios">
+                    <img class="section__nosotros__img" src="img/section_nosotros_2.jpeg"
+                        alt="vista de el local de HD Servicios">
                     <article class="main__section__columnas__info">
                         <h3 class="columnas__title">Misión y Visión</h3>
                         <p class="columnas__description">En HD Servicios, nuestra misión es proporcionar
                             servicios técnicos de excelencia y productos de calidad que satisfagan las necesidades
-                            de nuestros clientes y contribuyan al desarrollo de la comunidad. Para lograrlo, 
+                            de nuestros clientes y contribuyan al desarrollo de la comunidad. Para lograrlo,
                             funcionamos como un centro especializado que diagnostica y repara dispositivos electrónicos
                             de manera eficiente, ofreciendo además asesoría personalizada y un catálogo seleccionado
                             de accesorios que garantizan el óptimo rendimiento y la durabilidad de tus equipos.
@@ -96,5 +118,7 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
-</html>     
+
+</html>
